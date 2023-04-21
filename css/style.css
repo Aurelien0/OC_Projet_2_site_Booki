@@ -53,6 +53,32 @@ body {
     color: var(--main-bg-color)
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.logo img {
+    height: 19px;
+    width: 61.09px;
+}
+
+.menu-link-active {
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
+}
+
+header a {
+    padding-top: 14px;
+    color: #000000;
+}
+
+.menu :nth-child(even) {
+    margin-left: 69px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
