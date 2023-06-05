@@ -86,6 +86,36 @@ nav :nth-child(even) {
     border: 1px blue solid;
 }
 
+
+a:hover {
+    transform:scale(1.5);
+}
+
+nav a:hover {
+    transform:scale(1.5);
+    animation-name: border;
+    animation-timing-function: ease-in-out;
+}
+
+.menu-link-active:hover {    
+    transform:scale(1.5);
+    font-size: 35px;
+}
+
+.link {
+    animation-name: border;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes border {
+    from {border-top: 0%;}
+    to {border-top: 100%;}
+    }
+
+
+
+
 /* Barre de recherche */
 
 .search {
@@ -96,12 +126,13 @@ nav :nth-child(even) {
 
 .search button {
     background: #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 15px 15px 0;
     border: 1px solid #0065FC;
     color: #FFFFFF;
     min-width: 132px;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .search i {
@@ -113,7 +144,7 @@ nav :nth-child(even) {
     color: #000000;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
 }
 
 .search input::placeholder {
@@ -213,7 +244,7 @@ nav :nth-child(even) {
 .card {
     height: 100%;
     background-color: white;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     padding: 5px;
     padding-bottom: 0;
@@ -262,7 +293,7 @@ nav :nth-child(even) {
 
 .hebergements img {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     aspect-ratio: 5 / 3;
     min-height: 124px;
     max-height: 7.75em;
@@ -381,7 +412,7 @@ nav :nth-child(even) {
 
 .liste-activités div {
     border-radius: 20px;
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.28);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.28);
 }
 
 #activités h1 {
@@ -390,7 +421,7 @@ nav :nth-child(even) {
 }
 
 .liste-activités img{
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 23.75em;
@@ -398,7 +429,7 @@ nav :nth-child(even) {
 
 .list-activités p {
     font-weight: 700;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0 0 20px 20px;
     padding-left: 5%;
     display: flex;
     align-items: center;
@@ -474,7 +505,7 @@ footer h3 {
     .populaires-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0px 20px;
+        gap: 0 20px;
     }
 
     .populaires-cards img {
@@ -570,7 +601,7 @@ footer h3 {
         display: contents;
     }
 
-    .search p {
+    .search span {
         display: none;
     }
 
