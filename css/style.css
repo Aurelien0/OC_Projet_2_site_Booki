@@ -82,24 +82,14 @@ nav :nth-child(even) {
     margin-left: 4.3em;
 }
 
-.barre-mobile {
-    border: 1px blue solid;
-}
-
-
-
-
-
-
 nav a:hover {
-    font-weight: 800;
+    font-weight: 700;
     color: #0065FC;
 }
 
-
-
-
-
+.barre-mobile {
+    border: 1px blue solid;
+}
 
 /* Barre de recherche */
 
