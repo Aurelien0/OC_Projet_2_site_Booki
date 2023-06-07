@@ -208,7 +208,6 @@ nav a:hover {
 
 
 /* Hébergements And Populaires */
-
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -227,7 +226,7 @@ nav a:hover {
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     padding: 5px;
-    padding-bottom: 0;
+    padding-bottom: 0.5em;
 }
 
 .card-content {
@@ -235,14 +234,6 @@ nav a:hover {
     padding-right: 6.6%;
     display: flex;
     flex-direction: column;
-}
-
-.card-text a {
-    font-size: 0.875em;
-}
-
-.card-rating {
-    padding-bottom: 0.5em;
 }
 
 .card-rating i {
@@ -646,13 +637,11 @@ footer h3 {
         width: 100%;
         padding-bottom: 1%;
     }
-
     .list-cards img {
         max-width: 454px;
         aspect-ratio: 9 / 3;
         max-height: 100%;
     }
-
     .hebergements-and-populaires section {
         border-radius: 0;
     }
